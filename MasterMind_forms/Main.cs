@@ -43,8 +43,10 @@ namespace MasterMind_forms
         Random random = new Random();
 
         // variables index tableau
-        int rowIndexX = 0;
-        int columnIndexY = 0;
+        // columns
+        int rowIndex = 0;
+        //lignes
+        int columnIndex = 0;
 
         // couleur utilisateur
         int colorUser = -1;
@@ -55,14 +57,25 @@ namespace MasterMind_forms
         // tableau couleur utilisateur
         Color[,] tabUserColor = new Color[COLUMNS,ROWS];
 
-        // conteur couleurs correctes
+        // conteur couleurs bonne possition
         int goodPosition = 0;
 
-        // conteur faux
+        // conteur couleures mauvaise possition
         int badPosition = 0;
 
-        
-        
+        // couleur faux dans le code
+        int nul = 0;
+
+        //couleurs possibles returnes de Colors()
+        Color[] returnedFromColors;
+
+        // stocker le return du RandomCode()
+        Color[] retunedFromRandomCode;
+
+
+
+
+
 
         public Main()
         {
@@ -108,7 +121,7 @@ namespace MasterMind_forms
         }
 
         /// <summary>
-        /// Attribuer une couleur aux labels
+        /// Attribuer une couleur aux labels par l'utilisateur
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -116,45 +129,113 @@ namespace MasterMind_forms
         {
             Button clickedButton = (Button)sender;
             //remplir la ligne
-            if (rowIndexX == COLUMNS)
+            if (columnIndex == COLUMNS)
             {
                 MessageBox.Show("La ligne est remplie");
             }
-            //incrementer de 1 à chaque clique pour remplir la ligne
             else
-            {   
-                tabLblChoice[rowIndexX, columnIndexY].BackColor = clickedButton.BackColor;
-                //rowIndexX++;
+            {
+                tabLblChoice[columnIndex, rowIndex].BackColor = clickedButton.BackColor;
                 // stocker la couleur selectione par l'utilisateur
-                tabUserColor[rowIndexX, columnIndexY] = clickedButton.BackColor;
-                rowIndexX++;
+                tabUserColor[columnIndex, rowIndex] = clickedButton.BackColor;
+                columnIndex++;
             }
-            
+             
+
 
         }
 
+        /// <summary>
+        /// Btn pour verifier le code couleur introduit par l'utilisateur
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCheck_Click(object sender, EventArgs e)
         {
-            //couleurs possibles
-            Color[] returnedFromColors = Colors();
-            // code aleatoire
-            RandomCode(returnedFromColors);
-            // stocker le retun du randomCode
-            Color[] retunedFromRandomCode = RandomCode(returnedFromColors);
 
             // parcourir la ligne 
             for (int i = 0; i < COLUMNS; i++)
             {
                 // verifier les couleurs entres par l'utilisateur dans la ligne
-                if (retunedFromRandomCode[i] == tabUserColor[i,columnIndexY])
-                {  
-                    // si c'est correct
-                    tabLblCheck[i, columnIndexY].BackColor = Color.White;
-                    goodPosition++;
-
+                if (retunedFromRandomCode[i] == tabUserColor[i,rowIndex])
+                {
+                    // si couleur correct incrementer 
+                    goodPosition = i;
+                    // si c'est correct afficher une case en blanc
+                    //tabLblCheck[i, rowIndex].BackColor = Color.White;
+                    tabLblCheck[goodPosition, rowIndex].BackColor = Color.White;
                 }
+                else
+                {
+                    if (retunedFromRandomCode[0] == tabUserColor[i, rowIndex])
+                    {
+                        if (retunedFromRandomCode[0] != tabUserColor[i, rowIndex])
+                        {
+                            badPosition++;
+                        }
+                        else
+                        {
+                            goodPosition++;
+                        }
+                          
+                            //tabLblCheck[badPosition,rowIndex].BackColor = Color.Black;
+                    }
+                    if (retunedFromRandomCode[1] == tabUserColor[i, rowIndex])
+                    {
+                        if (retunedFromRandomCode[1] != tabUserColor[i, rowIndex])
+                        {
+                            badPosition++;
+                        }
+                        else
+                        {
+                            goodPosition++;
+                        }
+                    }
+                    if (retunedFromRandomCode[2] == tabUserColor[i, rowIndex])
+                    {
+                        if (retunedFromRandomCode[2] != tabUserColor[i, rowIndex])
+                        {
+                            badPosition++;
+                        }
+                        else
+                        {
+                            goodPosition++;
+                        }
+                    }
+                    if (retunedFromRandomCode[3] == tabUserColor[i, rowIndex])
+                    {
+                        if (retunedFromRandomCode[2] != tabUserColor[i, rowIndex])
+                        {
+                            badPosition++;
+                        }
+                        else
+                        {
+                            goodPosition++;
+                        } 
+     
+                    }
+                    if (goodPosition == 0)
+                    {
+                        tabLblCheck[goodPosition, rowIndex].BackColor = Color.Transparent;
+                    }
+                    
+                }
+                /*if (retunedFromRandomCode[i] != tabUserColor[i, rowIndex])
+                {
+                    nul = i;
+                    tabLblCheck[nul, rowIndex].BackColor = Color.Transparent;
+                } */
+                tabLblCheck[badPosition, rowIndex].BackColor = Color.Black;
+               
+
+
                 
             }
+            
+            // reinitialiser la colonne
+            columnIndex = 0;
+            // incrementer la ligne
+            rowIndex++;
           
 
         }
@@ -167,11 +248,11 @@ namespace MasterMind_forms
         private void Main_Load(object sender, EventArgs e)
         {
             //couleurs possibles
-            Color[] returnedFromColors = Colors();
+            returnedFromColors = Colors();
             // code aleatoire
             RandomCode(returnedFromColors);
-            // stocker le retun du randomCode
-            Color[] retunedFromRandomCode = RandomCode(returnedFromColors);
+            // stocker le return du randomCode
+            retunedFromRandomCode = RandomCode(returnedFromColors);
             // tester si le code fonctione
             label1.BackColor = retunedFromRandomCode[0];
             label2.BackColor = retunedFromRandomCode[1];
@@ -215,7 +296,7 @@ namespace MasterMind_forms
                     check.BackColor = Color.Transparent;
                     check.BorderStyle = BorderStyle.Fixed3D;
                     //taille
-                    check.Size = new Size(29, 27);
+                    check.Size = new Size(26, 27);
                     // position
                     check.Location = new Point((check.Width * l) + (l * padding), (check.Height * k ) + (k * margin + padding));
                     //associer au panel
