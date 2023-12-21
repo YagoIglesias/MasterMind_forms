@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panelPlay = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCode4 = new System.Windows.Forms.Label();
+            this.lblCode3 = new System.Windows.Forms.Label();
+            this.lblCode2 = new System.Windows.Forms.Label();
+            this.lblCode1 = new System.Windows.Forms.Label();
             this.checkPanel = new System.Windows.Forms.Panel();
             this.choicePanel = new System.Windows.Forms.Panel();
             this.panelColor = new System.Windows.Forms.Panel();
@@ -47,6 +47,11 @@
             this.lblTries = new System.Windows.Forms.Label();
             this.lblNbTries = new System.Windows.Forms.Label();
             this.btnCheck = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnReplay = new System.Windows.Forms.Button();
+            this.btnDebug = new System.Windows.Forms.Button();
+            this.lblDebug = new System.Windows.Forms.Label();
             this.panelPlay.SuspendLayout();
             this.panelColor.SuspendLayout();
             this.SuspendLayout();
@@ -55,10 +60,6 @@
             // 
             this.panelPlay.BackColor = System.Drawing.Color.DarkGray;
             this.panelPlay.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelPlay.Controls.Add(this.label4);
-            this.panelPlay.Controls.Add(this.label3);
-            this.panelPlay.Controls.Add(this.label2);
-            this.panelPlay.Controls.Add(this.label1);
             this.panelPlay.Controls.Add(this.checkPanel);
             this.panelPlay.Controls.Add(this.choicePanel);
             this.panelPlay.Location = new System.Drawing.Point(34, 25);
@@ -66,41 +67,41 @@
             this.panelPlay.Size = new System.Drawing.Size(532, 714);
             this.panelPlay.TabIndex = 0;
             // 
-            // label4
+            // lblCode4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(177, 686);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "label4";
+            this.lblCode4.BackColor = System.Drawing.Color.Transparent;
+            this.lblCode4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCode4.Location = new System.Drawing.Point(746, 768);
+            this.lblCode4.Name = "lblCode4";
+            this.lblCode4.Size = new System.Drawing.Size(34, 33);
+            this.lblCode4.TabIndex = 13;
             // 
-            // label3
+            // lblCode3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(136, 686);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "label3";
+            this.lblCode3.BackColor = System.Drawing.Color.Transparent;
+            this.lblCode3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCode3.Location = new System.Drawing.Point(692, 768);
+            this.lblCode3.Name = "lblCode3";
+            this.lblCode3.Size = new System.Drawing.Size(34, 33);
+            this.lblCode3.TabIndex = 12;
             // 
-            // label2
+            // lblCode2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(84, 686);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "label2";
+            this.lblCode2.BackColor = System.Drawing.Color.Transparent;
+            this.lblCode2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCode2.Location = new System.Drawing.Point(640, 768);
+            this.lblCode2.Name = "lblCode2";
+            this.lblCode2.Size = new System.Drawing.Size(34, 33);
+            this.lblCode2.TabIndex = 11;
             // 
-            // label1
+            // lblCode1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(42, 686);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "label1";
+            this.lblCode1.BackColor = System.Drawing.Color.Transparent;
+            this.lblCode1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCode1.Location = new System.Drawing.Point(590, 768);
+            this.lblCode1.Name = "lblCode1";
+            this.lblCode1.Size = new System.Drawing.Size(34, 33);
+            this.lblCode1.TabIndex = 10;
             // 
             // checkPanel
             // 
@@ -238,7 +239,7 @@
             // 
             // btnCheck
             // 
-            this.btnCheck.Location = new System.Drawing.Point(654, 669);
+            this.btnCheck.Location = new System.Drawing.Point(627, 615);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(104, 26);
             this.btnCheck.TabIndex = 5;
@@ -246,12 +247,73 @@
             this.btnCheck.UseVisualStyleBackColor = true;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(629, 294);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(104, 26);
+            this.btnExit.TabIndex = 5;
+            this.btnExit.Text = "Quitter";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(627, 566);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(104, 26);
+            this.btnDelete.TabIndex = 5;
+            this.btnDelete.Text = "Effacer";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnReplay
+            // 
+            this.btnReplay.Location = new System.Drawing.Point(629, 350);
+            this.btnReplay.Name = "btnReplay";
+            this.btnReplay.Size = new System.Drawing.Size(104, 26);
+            this.btnReplay.TabIndex = 5;
+            this.btnReplay.Text = "Rejouer";
+            this.btnReplay.UseVisualStyleBackColor = true;
+            this.btnReplay.Click += new System.EventHandler(this.btnReplay_Click);
+            // 
+            // btnDebug
+            // 
+            this.btnDebug.Location = new System.Drawing.Point(627, 713);
+            this.btnDebug.Name = "btnDebug";
+            this.btnDebug.Size = new System.Drawing.Size(104, 26);
+            this.btnDebug.TabIndex = 6;
+            this.btnDebug.Text = "Code Secret";
+            this.btnDebug.UseVisualStyleBackColor = true;
+            this.btnDebug.Click += new System.EventHandler(this.btnDebug_Click);
+            // 
+            // lblDebug
+            // 
+            this.lblDebug.AutoSize = true;
+            this.lblDebug.BackColor = System.Drawing.Color.Black;
+            this.lblDebug.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDebug.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblDebug.Location = new System.Drawing.Point(625, 673);
+            this.lblDebug.Name = "lblDebug";
+            this.lblDebug.Size = new System.Drawing.Size(105, 20);
+            this.lblDebug.TabIndex = 14;
+            this.lblDebug.Text = "Debeugage : ";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(797, 838);
+            this.ClientSize = new System.Drawing.Size(797, 825);
+            this.Controls.Add(this.lblDebug);
+            this.Controls.Add(this.lblCode4);
+            this.Controls.Add(this.btnDebug);
+            this.Controls.Add(this.lblCode3);
+            this.Controls.Add(this.lblCode2);
+            this.Controls.Add(this.btnReplay);
+            this.Controls.Add(this.lblCode1);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.lblNbTries);
             this.Controls.Add(this.lblTries);
@@ -262,7 +324,6 @@
             this.Text = "Master Mind";
             this.Load += new System.EventHandler(this.Main_Load);
             this.panelPlay.ResumeLayout(false);
-            this.panelPlay.PerformLayout();
             this.panelColor.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -286,10 +347,15 @@
         private System.Windows.Forms.Button btnCheck;
         private System.Windows.Forms.Panel checkPanel;
         private System.Windows.Forms.Panel choicePanel;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCode4;
+        private System.Windows.Forms.Label lblCode3;
+        private System.Windows.Forms.Label lblCode2;
+        private System.Windows.Forms.Label lblCode1;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnReplay;
+        private System.Windows.Forms.Button btnDebug;
+        private System.Windows.Forms.Label lblDebug;
     }
 }
 
