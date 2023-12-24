@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panelPlay = new System.Windows.Forms.Panel();
+            this.checkPanel = new System.Windows.Forms.Panel();
+            this.choicePanel = new System.Windows.Forms.Panel();
             this.lblCode4 = new System.Windows.Forms.Label();
             this.lblCode3 = new System.Windows.Forms.Label();
             this.lblCode2 = new System.Windows.Forms.Label();
             this.lblCode1 = new System.Windows.Forms.Label();
-            this.checkPanel = new System.Windows.Forms.Panel();
-            this.choicePanel = new System.Windows.Forms.Panel();
             this.panelColor = new System.Windows.Forms.Panel();
             this.btnMagenta = new System.Windows.Forms.Button();
             this.btnWhite = new System.Windows.Forms.Button();
@@ -62,16 +62,30 @@
             this.panelPlay.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelPlay.Controls.Add(this.checkPanel);
             this.panelPlay.Controls.Add(this.choicePanel);
-            this.panelPlay.Location = new System.Drawing.Point(34, 25);
+            this.panelPlay.Location = new System.Drawing.Point(63, 25);
             this.panelPlay.Name = "panelPlay";
-            this.panelPlay.Size = new System.Drawing.Size(532, 714);
+            this.panelPlay.Size = new System.Drawing.Size(441, 563);
             this.panelPlay.TabIndex = 0;
+            // 
+            // checkPanel
+            // 
+            this.checkPanel.Location = new System.Drawing.Point(250, 16);
+            this.checkPanel.Name = "checkPanel";
+            this.checkPanel.Size = new System.Drawing.Size(172, 523);
+            this.checkPanel.TabIndex = 9;
+            // 
+            // choicePanel
+            // 
+            this.choicePanel.Location = new System.Drawing.Point(17, 15);
+            this.choicePanel.Name = "choicePanel";
+            this.choicePanel.Size = new System.Drawing.Size(225, 524);
+            this.choicePanel.TabIndex = 8;
             // 
             // lblCode4
             // 
             this.lblCode4.BackColor = System.Drawing.Color.Transparent;
             this.lblCode4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCode4.Location = new System.Drawing.Point(746, 768);
+            this.lblCode4.Location = new System.Drawing.Point(738, 552);
             this.lblCode4.Name = "lblCode4";
             this.lblCode4.Size = new System.Drawing.Size(34, 33);
             this.lblCode4.TabIndex = 13;
@@ -80,7 +94,7 @@
             // 
             this.lblCode3.BackColor = System.Drawing.Color.Transparent;
             this.lblCode3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCode3.Location = new System.Drawing.Point(692, 768);
+            this.lblCode3.Location = new System.Drawing.Point(684, 552);
             this.lblCode3.Name = "lblCode3";
             this.lblCode3.Size = new System.Drawing.Size(34, 33);
             this.lblCode3.TabIndex = 12;
@@ -89,7 +103,7 @@
             // 
             this.lblCode2.BackColor = System.Drawing.Color.Transparent;
             this.lblCode2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCode2.Location = new System.Drawing.Point(640, 768);
+            this.lblCode2.Location = new System.Drawing.Point(632, 552);
             this.lblCode2.Name = "lblCode2";
             this.lblCode2.Size = new System.Drawing.Size(34, 33);
             this.lblCode2.TabIndex = 11;
@@ -98,24 +112,10 @@
             // 
             this.lblCode1.BackColor = System.Drawing.Color.Transparent;
             this.lblCode1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCode1.Location = new System.Drawing.Point(590, 768);
+            this.lblCode1.Location = new System.Drawing.Point(582, 552);
             this.lblCode1.Name = "lblCode1";
             this.lblCode1.Size = new System.Drawing.Size(34, 33);
             this.lblCode1.TabIndex = 10;
-            // 
-            // checkPanel
-            // 
-            this.checkPanel.Location = new System.Drawing.Point(309, 16);
-            this.checkPanel.Name = "checkPanel";
-            this.checkPanel.Size = new System.Drawing.Size(184, 650);
-            this.checkPanel.TabIndex = 9;
-            // 
-            // choicePanel
-            // 
-            this.choicePanel.Location = new System.Drawing.Point(27, 15);
-            this.choicePanel.Name = "choicePanel";
-            this.choicePanel.Size = new System.Drawing.Size(253, 653);
-            this.choicePanel.TabIndex = 8;
             // 
             // panelColor
             // 
@@ -128,15 +128,15 @@
             this.panelColor.Controls.Add(this.btnBlue);
             this.panelColor.Controls.Add(this.btnGreen);
             this.panelColor.Controls.Add(this.btnRed);
-            this.panelColor.Location = new System.Drawing.Point(50, 757);
+            this.panelColor.Location = new System.Drawing.Point(83, 606);
             this.panelColor.Name = "panelColor";
-            this.panelColor.Size = new System.Drawing.Size(506, 54);
+            this.panelColor.Size = new System.Drawing.Size(409, 54);
             this.panelColor.TabIndex = 1;
             // 
             // btnMagenta
             // 
             this.btnMagenta.BackColor = System.Drawing.Color.Magenta;
-            this.btnMagenta.Location = new System.Drawing.Point(375, 11);
+            this.btnMagenta.Location = new System.Drawing.Point(344, 11);
             this.btnMagenta.Name = "btnMagenta";
             this.btnMagenta.Size = new System.Drawing.Size(34, 33);
             this.btnMagenta.TabIndex = 6;
@@ -146,7 +146,7 @@
             // btnWhite
             // 
             this.btnWhite.BackColor = System.Drawing.Color.White;
-            this.btnWhite.Location = new System.Drawing.Point(325, 11);
+            this.btnWhite.Location = new System.Drawing.Point(294, 11);
             this.btnWhite.Name = "btnWhite";
             this.btnWhite.Size = new System.Drawing.Size(34, 33);
             this.btnWhite.TabIndex = 5;
@@ -156,7 +156,7 @@
             // btnBlack
             // 
             this.btnBlack.BackColor = System.Drawing.Color.Black;
-            this.btnBlack.Location = new System.Drawing.Point(276, 11);
+            this.btnBlack.Location = new System.Drawing.Point(245, 11);
             this.btnBlack.Name = "btnBlack";
             this.btnBlack.Size = new System.Drawing.Size(34, 33);
             this.btnBlack.TabIndex = 4;
@@ -166,7 +166,7 @@
             // btnOrange
             // 
             this.btnOrange.BackColor = System.Drawing.Color.Orange;
-            this.btnOrange.Location = new System.Drawing.Point(224, 10);
+            this.btnOrange.Location = new System.Drawing.Point(193, 10);
             this.btnOrange.Name = "btnOrange";
             this.btnOrange.Size = new System.Drawing.Size(34, 33);
             this.btnOrange.TabIndex = 3;
@@ -176,7 +176,7 @@
             // btnBlue
             // 
             this.btnBlue.BackColor = System.Drawing.Color.Blue;
-            this.btnBlue.Location = new System.Drawing.Point(175, 9);
+            this.btnBlue.Location = new System.Drawing.Point(144, 9);
             this.btnBlue.Name = "btnBlue";
             this.btnBlue.Size = new System.Drawing.Size(34, 33);
             this.btnBlue.TabIndex = 2;
@@ -186,7 +186,7 @@
             // btnGreen
             // 
             this.btnGreen.BackColor = System.Drawing.Color.Green;
-            this.btnGreen.Location = new System.Drawing.Point(123, 9);
+            this.btnGreen.Location = new System.Drawing.Point(92, 9);
             this.btnGreen.Name = "btnGreen";
             this.btnGreen.Size = new System.Drawing.Size(34, 33);
             this.btnGreen.TabIndex = 1;
@@ -196,7 +196,7 @@
             // btnRed
             // 
             this.btnRed.BackColor = System.Drawing.Color.Red;
-            this.btnRed.Location = new System.Drawing.Point(69, 9);
+            this.btnRed.Location = new System.Drawing.Point(38, 9);
             this.btnRed.Name = "btnRed";
             this.btnRed.Size = new System.Drawing.Size(34, 33);
             this.btnRed.TabIndex = 0;
@@ -207,11 +207,11 @@
             // 
             this.lblMasterMind.AutoSize = true;
             this.lblMasterMind.BackColor = System.Drawing.Color.Transparent;
-            this.lblMasterMind.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
+            this.lblMasterMind.Font = new System.Drawing.Font("Impact", 25F);
             this.lblMasterMind.ForeColor = System.Drawing.Color.White;
-            this.lblMasterMind.Location = new System.Drawing.Point(613, 25);
+            this.lblMasterMind.Location = new System.Drawing.Point(575, 25);
             this.lblMasterMind.Name = "lblMasterMind";
-            this.lblMasterMind.Size = new System.Drawing.Size(145, 29);
+            this.lblMasterMind.Size = new System.Drawing.Size(189, 42);
             this.lblMasterMind.TabIndex = 2;
             this.lblMasterMind.Text = "Master Mind";
             // 
@@ -239,7 +239,7 @@
             // 
             // btnCheck
             // 
-            this.btnCheck.Location = new System.Drawing.Point(627, 615);
+            this.btnCheck.Location = new System.Drawing.Point(619, 399);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(104, 26);
             this.btnCheck.TabIndex = 5;
@@ -249,7 +249,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(629, 294);
+            this.btnExit.Location = new System.Drawing.Point(621, 201);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(104, 26);
             this.btnExit.TabIndex = 5;
@@ -259,7 +259,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(627, 566);
+            this.btnDelete.Location = new System.Drawing.Point(619, 350);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(104, 26);
             this.btnDelete.TabIndex = 5;
@@ -269,7 +269,7 @@
             // 
             // btnReplay
             // 
-            this.btnReplay.Location = new System.Drawing.Point(629, 350);
+            this.btnReplay.Location = new System.Drawing.Point(621, 257);
             this.btnReplay.Name = "btnReplay";
             this.btnReplay.Size = new System.Drawing.Size(104, 26);
             this.btnReplay.TabIndex = 5;
@@ -279,7 +279,7 @@
             // 
             // btnDebug
             // 
-            this.btnDebug.Location = new System.Drawing.Point(627, 713);
+            this.btnDebug.Location = new System.Drawing.Point(619, 497);
             this.btnDebug.Name = "btnDebug";
             this.btnDebug.Size = new System.Drawing.Size(104, 26);
             this.btnDebug.TabIndex = 6;
@@ -293,7 +293,7 @@
             this.lblDebug.BackColor = System.Drawing.Color.Black;
             this.lblDebug.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDebug.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblDebug.Location = new System.Drawing.Point(625, 673);
+            this.lblDebug.Location = new System.Drawing.Point(617, 457);
             this.lblDebug.Name = "lblDebug";
             this.lblDebug.Size = new System.Drawing.Size(105, 20);
             this.lblDebug.TabIndex = 14;
@@ -304,7 +304,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(797, 825);
+            this.ClientSize = new System.Drawing.Size(797, 670);
             this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.lblCode4);
             this.Controls.Add(this.btnDebug);

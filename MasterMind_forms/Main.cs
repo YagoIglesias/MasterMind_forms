@@ -39,7 +39,7 @@ namespace MasterMind_forms
         Label[,] tabLblChoice = new Label[COLUMNS, ROWS];
 
         // separation des label et panel 
-        int margin = 40;
+        int margin = 20;
         int padding = 20;
 
         // tableau de label pour verifier les couleures correctes ou fauses
@@ -54,9 +54,6 @@ namespace MasterMind_forms
         //lignes
         int columnIndex = 0;
 
-        // couleur utilisateur
-        int colorUser = -1;
-
         // constante couleur aleatoire
         const int MAX_RANDOM = 4;
 
@@ -68,9 +65,6 @@ namespace MasterMind_forms
 
         // conteur couleures mauvaise possition
         int badPosition = 0;
-
-        // couleur faux dans le code
-        int nul = 0;
 
         //couleurs possibles returnes de Colors()
         Color[] returnedFromColors;
@@ -87,7 +81,8 @@ namespace MasterMind_forms
         // variable bool pour activer ou desactiver le code secret
         bool enable = false;
 
-
+        // var stocker la hauteur des label crées pour le choix des couleurs
+        int _heigthLblChoice = 0;
 
 
         public Main()
@@ -172,13 +167,15 @@ namespace MasterMind_forms
                     choice.BackColor = Color.Transparent;
                     choice.BorderStyle = BorderStyle.Fixed3D;
                     //taille
-                    choice.Size = new Size(29, 27);
+                    choice.Size = new Size(30, 30);
                     // position
                     choice.Location = new Point((choice.Width * j) + (j * padding), (choice.Height * i) + (i * margin + padding));
                     //associer au panel
                     choicePanel.Controls.Add(choice);
                     // ajouter les btns au tableau
                     tabLblChoice[j, i] = choice;
+                    // stocker la hauteur des label
+                    _heigthLblChoice = 30;
                 }
 
             }
@@ -195,9 +192,9 @@ namespace MasterMind_forms
                     check.BackColor = Color.Transparent;
                     check.BorderStyle = BorderStyle.Fixed3D;
                     //taille
-                    check.Size = new Size(26, 27);
+                    check.Size = new Size(25, 25);
                     // position
-                    check.Location = new Point((check.Width * l) + (l * padding), (check.Height * k) + (k * margin + padding));
+                    check.Location = new Point((check.Width * l) + (l * (padding - 10)), ((check.Height * k) + (_heigthLblChoice / 2 + 8) + (k * (margin + 5))));
                     //associer au panel
                     checkPanel.Controls.Add(check);
                     // ajouter les label de check au tableau
