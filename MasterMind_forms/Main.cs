@@ -23,16 +23,9 @@ namespace MasterMind_forms
 
         //conteur d'essais
         int _tries = 1;
-<<<<<<< HEAD
-=======
 
         // couleurs possibles
         const int _MAX_COLORS = 7;
-
-        // tableau de couleurs avec les couleurs possibles
-        //Color[] _tabColors = new Color[_MAX_COLORS];
-
->>>>>>> aaf9cd4ee4793051337128e06844183e587f0e97
 
         // constante choix des couleurs
         const int _ROWS = 10 ;
@@ -82,12 +75,6 @@ namespace MasterMind_forms
 
         // variable bool pour activer ou desactiver le code secret
         bool _enable = false;
-<<<<<<< HEAD
-=======
-
-        // var stocker la hauteur des label crées pour le choix des couleurs
-        int _heigthLblChoice = 0;
->>>>>>> aaf9cd4ee4793051337128e06844183e587f0e97
 
         // var stocker la hauteur des label crées pour le choix des couleurs
         int _heigthLblChoice = 0;
@@ -159,7 +146,6 @@ namespace MasterMind_forms
             lblCode2.Hide();
             lblCode3.Hide();
             lblCode4.Hide();
-
 
             // tableau de labels pour la selection des couleures par l'utilisateur
             for (int i = 0; i < _ROWS; i++)
@@ -264,8 +250,6 @@ namespace MasterMind_forms
                 _userCopyChoice[_columnIndex, _rowIndex] = clickedButton.BackColor;
                 _columnIndex++;
             }
-             
-
 
         }
 
@@ -308,32 +292,13 @@ namespace MasterMind_forms
                         btnReplay.Visible = true;
 
                         // desactiver les boutons
-<<<<<<< HEAD
                         Disable();
-
-=======
-                        btnBlack.Enabled = false;
-                        btnBlue.Enabled = false;
-                        btnGreen.Enabled = false;
-                        btnMagenta.Enabled = false;
-                        btnOrange.Enabled = false;
-                        btnRed.Enabled = false;
-                        break;
->>>>>>> aaf9cd4ee4793051337128e06844183e587f0e97
                     }
 
                 }
-
                 // assigner la valeur de good possition a bad possition
-<<<<<<< HEAD
                 _badPosition = _goodPosition;  
             }
-
-=======
-                _badPosition = _goodPosition;
-                
-            }
->>>>>>> aaf9cd4ee4793051337128e06844183e587f0e97
             for (int i = 0; i < _COLUMNS; i++)
             {
                 // verifier le code secret sans les couleurs deja trouves
@@ -367,24 +332,12 @@ namespace MasterMind_forms
                 // rendre vible le btn rejouer
                 btnReplay.Visible = true;
                 // desactiver les boutons
-<<<<<<< HEAD
                 Disable();
-
-=======
-                btnBlack.Enabled = false;
-                btnBlue.Enabled = false;
-                btnGreen.Enabled = false;
-                btnMagenta.Enabled = false;
-                btnOrange.Enabled = false;
-                btnRed.Enabled = false;
-                btnWhite.Enabled = false;
->>>>>>> aaf9cd4ee4793051337128e06844183e587f0e97
             }
             // compteur reinitialiser
             _goodPosition = 0;
             // compteur reinitialise
             _badPosition = 0;
-
         }
 
         /// <summary>
@@ -417,8 +370,7 @@ namespace MasterMind_forms
                 _columnIndex--;
                 _tabLblChoice[_columnIndex, _rowIndex].BackColor = Color.Transparent;
             }
-            
-            
+
         }
 
         /// <summary>

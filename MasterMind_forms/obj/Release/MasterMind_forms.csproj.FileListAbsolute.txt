@@ -1,0 +1,7 @@
+C:\Users\pw17kto\Desktop\Programmation\MasterMind_forms\MasterMind_forms\obj\Release\MasterMind_forms.csproj.AssemblyReference.cache
+C:\Users\pw17kto\Desktop\Programmation\MasterMind_forms\MasterMind_forms\obj\Release\MasterMind_forms.csproj.SuggestedBindingRedirects.cache
+C:\Users\pw17kto\Desktop\Programmation\MasterMind_forms\MasterMind_forms\obj\Release\MasterMind_forms.instructions.resources
+C:\Users\pw17kto\Desktop\Programmation\MasterMind_forms\MasterMind_forms\obj\Release\MasterMind_forms.Main.resources
+C:\Users\pw17kto\Desktop\Programmation\MasterMind_forms\MasterMind_forms\obj\Release\MasterMind_forms.Properties.Resources.resources
+C:\Users\pw17kto\Desktop\Programmation\MasterMind_forms\MasterMind_forms\obj\Release\MasterMind_forms.csproj.GenerateResource.cache
+C:\Users\pw17kto\Desktop\Programmation\MasterMind_forms\MasterMind_forms\obj\Release\MasterMind_forms.csproj.CoreCompileInputs.cache
