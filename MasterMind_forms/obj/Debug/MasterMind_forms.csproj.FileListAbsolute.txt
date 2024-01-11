@@ -42,4 +42,7 @@ D:\Programmation\MasterMind_forms\MasterMind_forms\obj\Debug\MasterMind_forms.ex
 D:\Programmation\MasterMind_forms\MasterMind_forms\obj\Debug\MasterMind_forms.pdb
 D:\Programmation\MasterMind_forms\MasterMind_forms\obj\Debug\MasterMind_forms.Main.resources
 D:\Programmation\MasterMind_forms\MasterMind_forms\obj\Debug\MasterMind_forms.instructions.resources
+<<<<<<< HEAD
 C:\Users\pw17kto\Desktop\Programmation\MasterMind_forms\MasterMind_forms\obj\Debug\MasterMind_forms.instructions.resources
+=======
+>>>>>>> aaf9cd4ee4793051337128e06844183e587f0e97
