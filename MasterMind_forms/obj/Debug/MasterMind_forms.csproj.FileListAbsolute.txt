@@ -35,10 +35,11 @@ D:\Programmation\MasterMind_forms\MasterMind_forms\bin\Debug\MasterMind_forms.ex
 D:\Programmation\MasterMind_forms\MasterMind_forms\bin\Debug\MasterMind_forms.exe
 D:\Programmation\MasterMind_forms\MasterMind_forms\bin\Debug\MasterMind_forms.pdb
 D:\Programmation\MasterMind_forms\MasterMind_forms\obj\Debug\MasterMind_forms.csproj.AssemblyReference.cache
-D:\Programmation\MasterMind_forms\MasterMind_forms\obj\Debug\MasterMind_forms.csproj.SuggestedBindingRedirects.cache
-D:\Programmation\MasterMind_forms\MasterMind_forms\obj\Debug\MasterMind_forms.Main.resources
 D:\Programmation\MasterMind_forms\MasterMind_forms\obj\Debug\MasterMind_forms.Properties.Resources.resources
 D:\Programmation\MasterMind_forms\MasterMind_forms\obj\Debug\MasterMind_forms.csproj.GenerateResource.cache
 D:\Programmation\MasterMind_forms\MasterMind_forms\obj\Debug\MasterMind_forms.csproj.CoreCompileInputs.cache
 D:\Programmation\MasterMind_forms\MasterMind_forms\obj\Debug\MasterMind_forms.exe
 D:\Programmation\MasterMind_forms\MasterMind_forms\obj\Debug\MasterMind_forms.pdb
+D:\Programmation\MasterMind_forms\MasterMind_forms\obj\Debug\MasterMind_forms.Main.resources
+D:\Programmation\MasterMind_forms\MasterMind_forms\obj\Debug\MasterMind_forms.instructions.resources
+C:\Users\pw17kto\Desktop\Programmation\MasterMind_forms\MasterMind_forms\obj\Debug\MasterMind_forms.instructions.resources
